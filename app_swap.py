@@ -5,9 +5,6 @@ from PIL import Image, ImageOps, ImageEnhance
 import re
 import math
 
-# Caminho completo para o executável tesseract.exe
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Visitante\Documents\app swap\tesseract.exe'
-
 st.set_page_config(layout="wide", page_title="Comparador de SWAPs", page_icon="🏦")
 # Logo da BR Partners
 st.image("br_logo.png", width=180)
