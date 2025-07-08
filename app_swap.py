@@ -5,6 +5,9 @@ from PIL import Image, ImageOps, ImageEnhance
 import re
 import math
 
+# Caminho completo para o executável tesseract.exe
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Visitante\Documents\app swap\tesseract.exe'
+
 st.set_page_config(layout="wide", page_title="Comparador de SWAPs", page_icon="🏦")
 # Logo da BR Partners
 st.image("br_logo.png", width=180)
@@ -143,7 +146,7 @@ if tipo_batimento == "Accrual - Último dia útil":
             # Comparar Ponta Dada
                 val_back_dada = parse_number(back_row.get("Valor da Curva Over (252) Ponta Dada"))
                 val_tes_dada = parse_number(tes_row.get("Valor da Curva Over (252) Ponta Dada"))
-                status_dada = "✅ Batido" if val_back_dada and val_tes_dada and abs(val_back_dada - val_tes_dada) < 0.5 else "❌ Divergente"
+                status_dada = "✅ Batido" if val_back_dada and val_tes_dada and abs(val_back_dada - val_tes_dada) < 200 else "❌ Divergente"
                 resultados_dada.append({
                     "Contrato": contrato,
                     "Cliente": back_row.get("Cliente"),
@@ -156,7 +159,7 @@ if tipo_batimento == "Accrual - Último dia útil":
             # Comparar Ponta Tomada
                 val_back_tomada = parse_number(back_row.get("Valor da Curva Over (252) Ponta Tomada"))
                 val_tes_tomada = parse_number(tes_row.get("Valor da Curva Over (252) Ponta Tomada"))
-                status_tomada = "✅ Batido" if val_back_tomada and val_tes_tomada and abs(val_back_tomada - val_tes_tomada) < 0.5 else "❌ Divergente"
+                status_tomada = "✅ Batido" if val_back_tomada and val_tes_tomada and abs(val_back_tomada - val_tes_tomada) < 200 else "❌ Divergente"
                 resultados_tomada.append({
                     "Contrato": contrato,
                     "Cliente": back_row.get("Cliente"),
@@ -182,7 +185,6 @@ if tipo_batimento == "Accrual - Último dia útil":
 # ====================== 
 # SWAP - VENCIMENTO 
 # =====================
-
 elif tipo_batimento == "Swap - Vencimento":
     st.subheader("📄 Batimento de Swap - Vencimento")
 
@@ -541,6 +543,18 @@ elif tipo_batimento == "Swap - Vencimento":
             val_planilha_fmt = "–"
             val_imagem_fmt = "–"
 
+            if valor_planilha_processed in [None, "-", "–"] and valor_imagem_processed in [None, "-", "–"]:
+                igual = True 
+                val_planilha_fmt = "–"
+                val_imagem_fmt = "–"
+                resultados.append({
+                    'Campo': campo_display,
+                    'Valor Planilha': val_planilha_fmt,
+                    'Valor Imagem': val_imagem_fmt,
+                    'Status': '✔️'
+                })
+                continue  
+
             # Comparison Logic
             if "Data" in campo_display:
                 plan_data = valor_planilha_processed
@@ -568,7 +582,10 @@ elif tipo_batimento == "Swap - Vencimento":
                     igual = math.isclose(valor_planilha_processed, valor_imagem_processed, rel_tol=1e-5, abs_tol=1e-7)
                 elif "Fator" in campo_display:
                     # Compare with sign for Fator fields
-                    igual = math.isclose(valor_planilha_processed, valor_imagem_processed, rel_tol=1e-9, abs_tol=1e-10)
+                    if campo_display == "Fator carrego":
+                         igual = math.isclose(valor_planilha_processed, valor_imagem_processed, rel_tol=1e-8, abs_tol=1e-10)
+                    else:
+                        igual = math.isclose(valor_planilha_processed, valor_imagem_processed, rel_tol=1e-9, abs_tol=1e-10)
                 else:
                     # Default for other numeric fields (compare with sign)
                     igual = math.isclose(valor_planilha_processed, valor_imagem_processed, rel_tol=1e-3, abs_tol=0.01)
@@ -663,6 +680,8 @@ elif tipo_batimento == "Swap - Vencimento":
  
 st.markdown("---")
 st.caption("Desenvolvido por Isabela Haddad · Tesouraria BR Partners 2025")
+st.caption("Desenvolvido por Isabela Haddad · Tesouraria BR Partners 2025")
+
 
         
 
