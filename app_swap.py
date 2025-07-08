@@ -3,7 +3,14 @@ import pandas as pd
 import pytesseract
 from PIL import Image, ImageOps, ImageEnhance
 import re
-import math
+import math, plataform, shutil 
+
+if platform.system() == "Windows":
+    # Caminho do seu executável local
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Users\Visitante\Documents\app swap\tesseract.exe"
+else:
+    # No Linux (ex.: Streamlit Cloud) usamos o binário instalado via apt
+    pytesseract.pytesseract.tesseract_cmd = shutil.which("tesseract") or "tesseract"
 
 st.set_page_config(layout="wide", page_title="Comparador de SWAPs", page_icon="🏦")
 # Logo da BR Partners
@@ -677,7 +684,7 @@ elif tipo_batimento == "Swap - Vencimento":
  
 st.markdown("---")
 st.caption("Desenvolvido por Isabela Haddad · Tesouraria BR Partners 2025")
-st.caption("Desenvolvido por Isabela Haddad · Tesouraria BR Partners 2025")
+
 
 
         
