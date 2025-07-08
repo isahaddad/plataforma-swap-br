@@ -22,8 +22,7 @@ Você verá:
 ### 2. `Accrual - Último dia útil` para batimento de accrual 
 1. Faça upload da **planilha da Tesouraria** (aba mestre)
 2. Faça upload da **planilha do BackOffice BI Sales Accrual ** (normalmente com header a partir da 4ª linha)
-3. A plataforma compara os contratos com base no número e data de vencimento
-Compare os valores de **Ponta Dada** e **Ponta Tomada** entre a planilha da Tesouraria e a planilha enviada pelo BackOffice.
+3. A plataforma compara as informações dos contratos (**Ponta Dada** e **Ponta Tomada**)  com base no número de contrato e data de vencimento.
 Você verá duas tabelas:
 - Comparação da Ponta Dada
 - Comparação da Ponta Tomada  
