@@ -26,8 +26,11 @@ A plataforma oferece duas formas de batimento: **Vencimento** e **Accrual**.
 
   **O que é necessário fazer?**
   Em ambas as planilhas da tesouraria é necessário fazer o input do valor de CDI diário na última aba denominada "CDI".
+  
   -Na coluna A colocar a data
+  
   -Na coluna B a taxa CDI diária
+  
   Assim, o fator CDI pode ser calculado automaticamente. 
 ---
 
