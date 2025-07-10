@@ -274,7 +274,7 @@ elif tipo_batimento == "Swap - Vencimento":
             'Ajuste bruto': r'Ajuste Bruto[:\s\-–]{1,2}\s*([-]?[\(]?R?\$?\s*[\d\.,]+[\)]?)',
             'Ajuste líquido': r'Ajuste [Ll][ií]quido[:\s\-–]*-?R?\$?\s*([-]?[\d\.,]+)',
             'Notional': r'Notional[:\s]*R?\$?\s*([-]?[\d\.,]+)',
-            'Notional c/ correção': r'Notional c/? corre[çc][ãa]o[:\s]*R?\$?\s*([-]?[\d\.,]+)',
+            'Notional c/ correção': r'Not[i1l]nal\s*c[\/]?\s*corre[çc][aã][aão]*.*?R\$\s*([-]?[\d\.,]+)',
             'Parcela Pré': r'Parcela Pr[ée]?\s*[:\-]?\s*R?\$?\s*([-]?[\d\.,]+)',
             'Taxa Pré': r'Taxa Pr[ée][:\s]*R?\$?\s*([-]?[\d\.,%]+)',
             'Fator Pré': r'Fator Pr[ée]?[\s:]*([-]?[\d\.,]+)',
