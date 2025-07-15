@@ -21,15 +21,21 @@ A plataforma oferece duas formas de batimento: **Vencimento** e **Accrual**.
   Ela já realiza o cálculo automático do fator CDI e do NI oficial.  
   ✅ *Não é necessário modificar a planilha.* Basta copiar a aba mestre e usá-la como input na plataforma.
 
-- Para o **batimento de accrual**, utilize a planilha **"Accrual (para bater accrual) (versão)"**, também automatizada.  
+- Para o **batimento de accrual**, utilize a planilha **"Accrual (para bater accrual) (versão 2)"**, também automatizada.  
   ✅ *Basta copiar a aba mestre e usá-la como input na seção "Accrual – Último dia útil" da plataforma.*
+  
+---
+  
+##   Ações necessárias 
+
+Para o cálculo de CDI faz-se necessário realizar o input da taxa CDI do dia. A cada dia é preciso atualizar na aba "CDI" das planilhas (a última aba de ambos excel's **"Accrual (versão 2)"** e  **"Accrual (para bater accrual) (versão 2)"** ) para que o cálculo automático do fator CDI ocorra. 
 
 ---
 
 ## ⚙️ Tipos de Batimento Disponíveis
 
 ### 1. `Swap – Vencimento`
-
+dada
 Para realizar o batimento de vencimentos de swap:
 
 1. Copie a aba mestre da planilha **"Accrual (versão 2)"**
@@ -70,7 +76,7 @@ Cada linha indicará se o valor está `✅ Batido` ou `❌ Divergente`.
 
 - Utiliza **OCR (Tesseract)** para extrair os textos das imagens
 - Todos os valores são automaticamente convertidos para o formato correto de comparação
-- Diferenças pequenas inferiores a R$ 0,50 são ignoradas (tolerância automática)
+- Diferenças pequenas inferiores a R$ 200,00 são ignoradas (tolerância automática)
 
 ---
 
