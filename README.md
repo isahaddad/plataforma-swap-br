@@ -59,7 +59,7 @@ Você verá:
 
 Para realizar o batimento de accrual no fim do mês:
 
-1. Faça upload da **Planilha da Tesouraria** (aba mestre)
+1. Faça upload da planilha da tesouraria **"Accrual (para bater accrual) (versão 2)"** (aba mestre)
 2. Faça upload da **Planilha do BackOffice (BI Sales Accrual)** — normalmente com header a partir da 4ª linha
 3. A plataforma irá comparar os dados dos contratos (**Ponta Dada** e **Ponta Tomada**), com base no **número do contrato** e **data de vencimento**
 
