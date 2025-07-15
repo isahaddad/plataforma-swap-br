@@ -35,7 +35,7 @@ Para o cálculo de CDI faz-se necessário realizar o input da taxa CDI do dia. A
 ## ⚙️ Tipos de Batimento Disponíveis
 
 ### 1. `Swap – Vencimento`
-dada
+
 Para realizar o batimento de vencimentos de swap:
 
 1. Copie a aba mestre da planilha **"Accrual (versão 2)"**
