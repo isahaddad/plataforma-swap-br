@@ -9,7 +9,32 @@ A plataforma realiza o batimento de valores com base em imagens (OCR) e planilha
 
 Acesse pelo link abaixo:
 
-👉 [https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/](https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/)
+👉 [https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/](https://plataforma-swap-br-shto3mmqjpcvzc7fnv.streamlit.app/)
+
+---
+
+## 🛌 Como "acordar" o app depois de muito tempo sem uso
+
+Se o app ficar muito tempo sem uso, ele pode "dormir" automaticamente. Nesse caso, ao tentar acessar, pode aparecer a mensagem:
+
+> **"You do not have access to this app or it does not exist."**
+
+**O que fazer?**
+
+1. Saia da página e clique novamente no link da plataforma.
+2. Uma nova tela deve aparecer com a mensagem:
+
+   > **"This app has gone to sleep due to inactivity. Would you like to wake it back up?"**
+  <img width="886" height="248" alt="image" src="https://github.com/user-attachments/assets/ef9f30cd-a7ef-49a3-97a2-29c413dc3382" />
+
+3. Clique no botão **"Yes, get this app back up!"** e aguarde alguns segundos até que a aplicação esteja pronta para uso.
+
+<img width="886" height="261" alt="image" src="https://github.com/user-attachments/assets/a7b83b87-6379-44dd-9062-a910efa2f568" />
+
+Se isso não funcionar:
+
+- Acesse diretamente o site da Streamlit.
+- Clique no nome do app e depois no ícone de nuvem para forçar o "acordar".
 
 ---
 
@@ -25,10 +50,10 @@ A plataforma oferece duas formas de batimento: **Vencimento** e **Accrual**.
   ✅ *Basta copiar a aba mestre e usá-la como input na seção "Accrual – Último dia útil" da plataforma.*
   
 ---
-  
-##   Ações necessárias 
 
-Para o cálculo de CDI faz-se necessário realizar o input da taxa CDI do dia. A cada dia é preciso atualizar na aba "CDI" das planilhas (a última aba de ambos excel's **"Accrual (versão 2)"** e  **"Accrual (para bater accrual) (versão 2)"** ) para que o cálculo automático do fator CDI ocorra. 
+## 🧾 Ações necessárias 
+
+Para o cálculo de CDI faz-se necessário realizar o input da taxa CDI do dia. A cada dia é preciso atualizar na aba "CDI" das planilhas (a última aba de ambos os Excel's **"Accrual (versão 2)"** e **"Accrual (para bater accrual) (versão 2)"**) para que o cálculo automático do fator CDI ocorra. 
 
 ---
 
@@ -86,12 +111,8 @@ Em caso de dúvidas, erros ou necessidade de ajustes:
 
 **Isabela Haddad** – Tesouraria BR Partners  
 📧 isabela.haddad@brpartners.com.br  
-📧 isabela.haddad@icloud.com
+📧 isabela.haddad@icloud.com  
 📂 Ou abra uma *issue* neste repositório
 
 ---
 
-## 👩‍💻 Desenvolvido por
-
-**Isabela Haddad**  
-Tesouraria – BR Partners, 2025
