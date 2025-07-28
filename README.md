@@ -86,6 +86,7 @@ Em caso de dúvidas, erros ou necessidade de ajustes:
 
 **Isabela Haddad** – Tesouraria BR Partners  
 📧 isabela.haddad@brpartners.com.br  
+📧 isabela.haddad@icloud.com
 📂 Ou abra uma *issue* neste repositório
 
 ---
