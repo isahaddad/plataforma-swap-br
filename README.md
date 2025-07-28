@@ -18,6 +18,7 @@ Acesse pelo link abaixo:
 Se o app ficar muito tempo sem uso, ele pode "dormir" automaticamente. Nesse caso, ao tentar acessar, pode aparecer a mensagem:
 
 > **"You do not have access to this app or it does not exist."**
+>   <img width="886" height="248" alt="image" src="https://github.com/user-attachments/assets/ef9f30cd-a7ef-49a3-97a2-29c413dc3382" />
 
 **O que fazer?**
 
@@ -25,11 +26,9 @@ Se o app ficar muito tempo sem uso, ele pode "dormir" automaticamente. Nesse cas
 2. Uma nova tela deve aparecer com a mensagem:
 
    > **"This app has gone to sleep due to inactivity. Would you like to wake it back up?"**
-  <img width="886" height="248" alt="image" src="https://github.com/user-attachments/assets/ef9f30cd-a7ef-49a3-97a2-29c413dc3382" />
+<img width="886" height="261" alt="image" src="https://github.com/user-attachments/assets/a7b83b87-6379-44dd-9062-a910efa2f568" />
 
 3. Clique no botão **"Yes, get this app back up!"** e aguarde alguns segundos até que a aplicação esteja pronta para uso.
-
-<img width="886" height="261" alt="image" src="https://github.com/user-attachments/assets/a7b83b87-6379-44dd-9062-a910efa2f568" />
 
 Se isso não funcionar:
 
