@@ -9,7 +9,7 @@ A plataforma realiza o batimento de valores com base em imagens (OCR) e planilha
 
 Acesse pelo link abaixo:
 
-👉 [https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/](https://plataforma-swap-br-shto3mmqjpcvzc7fnv.streamlit.app/)
+👉 [https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/](https://plataforma-swap-br-shto3mmq8npqjpcvzc7fnv.streamlit.app/)
 
 ---
 
